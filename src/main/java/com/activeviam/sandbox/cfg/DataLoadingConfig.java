@@ -113,10 +113,9 @@ public class DataLoadingConfig {
 				properties,
 				"Sandbox JDBC Source",
 				2, // pool size
-				20000, // append queue size
 				5000  // append batch size
 		);
-		 
+		
 		// Register topics
 		jdbcSource.addTopic(new JDBCTopic("Products", "SELECT * from Products"));
 		jdbcSource.addTopic(new JDBCTopic("Trades", "SELECT * from Trades"));
