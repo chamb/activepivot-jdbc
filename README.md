@@ -1,7 +1,7 @@
 # sandbox-jdbc
 ActivePivot sample project to demonstrate loading data from a relational database using JDBC.
 
-To start the application, launch `com.activeviam.sandbox.ActivePivotServer` or alternatively, build the project with maven into a .war file, and deploy the .war file in a servlet container such as Apache Tomcat.
+To start the application, launch `com.activeviam.sandbox.ActivePivotJDBCApplication` or alternatively, build the project with maven (`mvn clean install`) which will produce a Spring Boot executable jar containing all its dependencies, and then run the jar with `java -jar activepivot-jdbc-1.0.0-SNAPSHOT.jar`.
 
 The project is autocontained and creates a transient h2 database when the application starts, loaded with sample data (a portfolio management data model with trades, products and risks). The initialization of database is done in `com.activeviam.sandbox.cfg.DataLoadingConfig#createDatabase()`. When using an existing database, this preparation step can be removed.
 
