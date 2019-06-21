@@ -1,4 +1,4 @@
-# sandbox-jdbc
+# activepivot-jdbc
 ActivePivot sample project to demonstrate loading data from a relational database using JDBC.
 
 To start the application, launch `com.activeviam.sandbox.ActivePivotJDBCApplication` or alternatively, build the project with maven (`mvn clean install`) which will produce a Spring Boot executable jar containing all its dependencies, and then run the jar with `java -jar activepivot-jdbc-1.0.0-SNAPSHOT.jar`.
